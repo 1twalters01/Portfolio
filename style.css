@@ -1,0 +1,94 @@
+
+
+@media only screen and (min-width:1025px) {
+    .container{
+        width: 900px;
+        margin: auto;
+    }
+    .hero{
+        height: 710px;
+        vertical-align:middle;
+    }
+    .hero .header{
+        padding-top: 15%;
+    }
+    .hero .header .subtitle{
+        margin-top: 40px;
+    }
+    .hero .links{
+        text-align: center;
+        margin-top: 90px;
+    }
+    .hero .links .other{
+        margin-top: 50px;
+    }
+    .hero .links .view-CV{
+        border: 2px solid blue;
+        background-color: blue;
+        border-radius: 5px;
+        color: white;
+    }
+    .hero .links .download-CV{
+        border: 2px solid red;
+        background-color: red;
+        border-radius: 5px;
+        color: white;
+    }
+    .hero .other{
+        width: 350px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: auto;
+    }
+    .hero .other div a svg{
+        display: block;
+        margin: auto;
+        
+    }
+
+
+
+    .stack{
+        margin: auto auto 160px auto;
+        text-align: center;
+    }
+    .stack h1{
+        text-align: left;
+        margin-bottom: 50px;
+    }
+    .stack .backend{
+        margin-bottom: 120px;
+    }
+    .stack .backend-languages{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .stack .frontend-languages{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .stack img{
+        height: 100px;
+        width: 100px;
+    }
+
+
+    .projects .current{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .projects .tech span{
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (min-width:769px) and (max-width:1024px) {
+
+}
+@media only screen and (min-width:481px) and (max-width:768px) {
+
+}
+@media only screen and (min-width:320px) and (max-width:480px) {
+
+}
