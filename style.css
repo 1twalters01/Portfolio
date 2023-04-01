@@ -35,7 +35,7 @@ nav span{
 .title{
     color: #ebedf3;
 }
-.subtitle, .subtext, text{
+.subtitle, .subtext, .text{
     color: #c4c6cc;
 }
 
@@ -64,6 +64,12 @@ nav span{
 .links a:hover{
     color: var(--quinary);
 }
+footer a{
+    color: azure;
+}
+footer a:hover{
+    color: var(--quinary);
+}
 
 /* Fonts */
 body{
@@ -80,22 +86,210 @@ body{
 
 
 
-@media only screen and (min-width:1025px) {
+/* Main styling */
+.container{
+    width: 900px;
+    margin: auto;
+}
+/* Navbar */
+#navbar{
+    background-color: var(--primary);
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    right: 40px;
+    text-align: right;
+    padding: 30px 20px 40px 0;
+    display: block;
+    transition: top 0.2s;
+}
+nav a{
+    margin: 0 15px;
+}
+
+/* Hero section */
+.hero{
+    height: 850px;
+    vertical-align:middle;
+}
+/* Header */
+.hero .header{
+    padding-top: 13%;
+}
+.hero .header .title{
+    font-size: 90px;
+}
+.hero .header .subtitle{
+    font-size: 70px;
+    margin-top: 20px;
+}
+.hero .header .subtext{
+    width: 50%;
+    font-size: 20px;
+    margin-top: 35px;
+}
+/* CV buttons */
+.hero .main-links{
+    text-align: center;
+    margin-top: 70px;
+}
+.hero .main-links .cv{
+    width: 600px;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    margin: auto;
+}
+.hero .cv-container{
+    padding: 20px 0;
+}
+.cv-style{
+    border: 3px solid;
+    border-radius: 10px;
+}
+/* links */
+.hero .main-links .other{
+    width: 350px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px auto auto auto;
+}
+.hero .other div a svg{
+    display: block;
+    height: 25px;
+    width: 25px;
+    margin: auto auto 5px auto;
+}
+
+
+
+.stack{
+    margin: auto auto 200px auto;
+    text-align: center;
+}
+.stack .section-title{
+    text-align: left;
+    margin-bottom: 50px;
+}
+.stack .backend{
+    margin-bottom: 120px;
+}
+.stack .subtitle{
+    margin-bottom: 40px;
+}
+.stack .backend-languages{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.stack .frontend-languages{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.stack img{
+    height: 100px;
+    width: 100px;
+}
+
+
+
+.current-project{
+    margin-bottom: 160px;
+}
+.section-title{
+    text-align: left;
+}
+.current-project .section-title{
+    margin-bottom: 50px;
+}
+.current-project .current{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.subtitle{
+    margin-bottom: 10px;
+}
+.current-project .about{
+    margin-bottom: 15px;
+}
+.current-project .tech{
+    margin-bottom: 40px;
+}
+.tech span{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.current-project .bullet-points{
+    margin: 0  0 30px 20px;
+}
+.current-project .bullet-points li{
+    margin: 0  0 6px 0;
+}
+
+.links{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+}
+.links .code{
+    text-align: left;
+}
+.links {
+    width: 100px;
+    text-align: center;
+    margin: auto;
+}
+.links .code a svg{
+    display: block;
+    text-align: left;
+    height: 25px;
+    width: 25px;
+    margin: auto auto 5px 9px;
+}
+.links .video{
+    text-align: right;
+    margin-right: 3px
+}
+.links .video a svg{
+    text-align: right;
+    display: block;
+    text-align: right;
+    height: 25px;
+    width: 25px;
+    margin: auto 6px 5px auto;
+}
+
+
+.other-projects .project-container{
+    width: 500px;
+    margin: auto auto 100px auto;
+}
+.other-projects .project-container{
+    margin-bottom: 50px;
+}
+.other-projects .project{
+    margin-bottom: 30px;
+}
+.other-projects .project .tech{
+    margin-bottom: 15px;
+}
+
+footer{
+    padding-bottom: 30px;
+}
+
+
+/* PCs/Laptops */
+@media only screen and (min-width:769px) and (max-width:1024px) {
     .container{
-        width: 900px;
-        margin: auto;
+        width: 80%;
     }
     /* Navbar */
     #navbar{
-        background-color: var(--primary);
-        width: 100%;
-        height: 50px;
-        position: fixed;
-        right: 40px;
-        text-align: right;
-        padding: 30px 20px 40px 0;
-        display: block;
-        transition: top 0.2s;
+        height: 30px;
+        padding: 20px 10px 40px 0;
     }
     nav a{
         margin: 0 15px;
@@ -103,43 +297,43 @@ body{
 
     /* Hero section */
     .hero{
-        height: 850px;
-        vertical-align:middle;
+        height: 100vh;
+        vertical-align: middle;
+        margin-bottom: 50px;
     }
     /* Header */
     .hero .header{
-        padding-top: 13%;
+        padding-top: 15%;
     }
     .hero .header .title{
-        font-size: 90px;
+        font-size: 3.5rem;
     }
     .hero .header .subtitle{
-        font-size: 70px;
-        margin-top: 20px;
+        font-size: 2rem;
+        margin-top: 10px;
     }
     .hero .header .subtext{
-        width: 50%;
+        width: 60%;
         font-size: 20px;
-        margin-top: 35px;
-    }
-    .hero .main-links{
-        text-align: center;
-        margin-top: 70px;
+        margin-top: 20px;
     }
     /* CV buttons */
+    .hero .main-links{
+        margin-top: 10%;
+    }
     .hero .main-links .cv{
-        width: 600px;
-        font-size: 20px;
+        width: 70%;
+        font-size: 1rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 50px;
+        grid-gap: 8%;
         margin: auto;
     }
     .hero .cv-container{
-        padding: 20px 0;
+        padding: 10px 0;
     }
     .cv-style{
-        border: 3px solid;
+        border: 2.5px solid;
         border-radius: 10px;
     }
     /* links */
@@ -151,48 +345,47 @@ body{
     }
     .hero .other div a svg{
         display: block;
-        height: 25px;
-        width: 25px;
+        height: 20px;
+        width: 20px;
         margin: auto auto 5px auto;
     }
 
 
 
     .stack{
-        margin: auto auto 200px auto;
+        margin: auto auto 18% auto;
         text-align: center;
     }
     .stack .section-title{
         text-align: left;
-        margin-bottom: 50px;
-    }
-    .stack .backend{
-        margin-bottom: 120px;
-    }
-    .stack .subtitle{
         margin-bottom: 40px;
     }
-    .stack .backend-languages{
+    .stack .backend{
+        margin-bottom: 90px;
+    }
+    .stack .subtitle{
+        margin-bottom: 30px;
+    }
+    .stack .backend-languages, .stack .frontend-languages{
+        width: 80%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        margin: auto;
     }
-    .stack .frontend-languages{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-
     .stack img{
-        height: 100px;
-        width: 100px;
+        height: 80px;
+        width: 80px;
     }
 
 
 
     .current-project{
-        margin-bottom: 160px;
+        margin-bottom: 20%;
     }
     .section-title{
         text-align: left;
+    }
+    .current-project .section-title{
         margin-bottom: 50px;
     }
     .current-project .current{
@@ -206,14 +399,15 @@ body{
         margin-bottom: 15px;
     }
     .current-project .tech{
-        margin-bottom: 40px;
+        margin-bottom: 60px;
     }
     .tech span{
         font-weight: bold;
         font-size: 1.2rem;
     }
     .current-project .bullet-points{
-        margin: 0  0 30px 20px;
+        width: 165%;
+        margin: 0  0 30px -70%;
     }
     .current-project .bullet-points li{
         margin: 0  0 6px 0;
@@ -235,10 +429,10 @@ body{
     }
     .links .code a svg{
         display: block;
-        text-align: left;
-        height: 25px;
-        width: 25px;
-        margin: auto auto 5px 9px;
+        text-align: center;
+        height: 20px;
+        width: 20px;
+        margin: auto auto 5px 12px;
     }
     .links .video{
         text-align: right;
@@ -248,23 +442,24 @@ body{
         text-align: right;
         display: block;
         text-align: right;
-        height: 25px;
-        width: 25px;
-        margin: auto 6px 5px auto;
+        height: 20px;
+        width: 20px;
+        margin: auto 9px 5px auto;
     }
-    
+    a svg{
+        display: block;
+    }
 
 
-
-    .other-projects{
-        margin-bottom: 160px;
+    .other-projects .section-title{
+        margin-bottom: 50px;
+    }
+    .other-projects .project-container{
+        width: 500px;
+        margin: auto auto 100px auto;
     }
     .other-projects .project-container{
         margin-bottom: 50px;
-    }
-    .other-projects .project{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
     }
     .other-projects .project{
         margin-bottom: 30px;
@@ -272,13 +467,18 @@ body{
     .other-projects .project .tech{
         margin-bottom: 15px;
     }
-}
-@media only screen and (min-width:769px) and (max-width:1024px) {
 
+    footer{
+        padding-bottom: 30px;
+    }
 }
+
+
 @media only screen and (min-width:481px) and (max-width:768px) {
 
 }
+
+
 @media only screen and (min-width:320px) and (max-width:480px) {
 
 }

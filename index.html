@@ -140,19 +140,18 @@
                         </div>
 
                         <div class="tech">
-                            <p><span>Front-end: </span>React (ts), React Redux, Redux persist, SCSS</p>
+                            <p><span>Front-end: </span>React (TS), React Redux, Redux persist, SCSS</p>
                             <p><span>Back-end: </span>Django, DjangoRest Framework, PostgreSQL</p>
                             <p><span>Design: </span>Midjourney, Figma</p>
                         </div>
                         
     
                         <div class="bullet-points">
-                            
                             <ul>
                                 <li>Webscraped reverso for thousands of data points with BS4.</li>
                                 <li>Uses DjangoRest Knox and python social auth for authentication.</li>
                                 <li>Uses the mailchimp API for newsletters.</li>
-                                <li>Stripe, Paypal, and Coinbase commerce APIs are used for subscriptions. Includes a free trial and uses webhooks to sync subscription status with the payment providers.</li>
+                                <li>Stripe, Paypal, and Coinbase commerce APIs are used for subscriptions. Has free trial functionality. Uses webhooks to sync subscription status with the payment providers.</li>
                             </ul>
                         </div>
                     </div>
@@ -186,21 +185,15 @@
                 
                 <div class="project-container">
                     <div class="project">
-                        <div class="left">
-                            Image
+                        <h1 class="subtitle">Django payment system</h1>
+                        <div class="tech">
+                            <p><span>Back-end: </span>Django, DjangoRest Framework, MySQL</p>
                         </div>
-                        <div class="right">
-                            <h1 class="subtitle">Django payment system</h1>
-                            <div class="tech">
-                                <p><span>Back-end: </span>Django, DjangoRest Framework, MySQL</p>
-                            </div>
-                            
-                            <div class="about">
-                                <p>
-                                    A client wanted to add Stripe and paypal subscription functionality to their Django store but couldn't get things like tutorials, dj-stripe, or django-paypal to work. They wanted the ability to have a free trial. I created my own system for this, ensuring that it was made to be scalable (i.e. other payment providers could easily be added). I used webhooks to ensure that payment was accepted, and encrypted the customer id (and subscription id in the case of stripe) with python-cryptography.
-                                </p>
-                            </div>
-
+                        
+                        <div class="about">
+                            <p>
+                                A client wanted to add Stripe and paypal subscription functionality to their Django store but couldn't get things like tutorials, dj-stripe, or django-paypal to work. They wanted the ability to have a free trial. I created my own system for this, ensuring that it was made to be scalable (i.e. other payment providers could easily be added). I used webhooks to ensure that payment was accepted, and encrypted the customer id (and subscription id in the case of stripe) with python-cryptography.
+                            </p>
                         </div>
                     </div>
                     <div class="links">
@@ -226,18 +219,13 @@
                 
                 <div class="project-container">
                     <div class="project">
-                        <div class="left">
-                            <h1 class="subtitle">Amazon web scraping</h1>
-                            <div class="tech">
-                                <p><span>Back-end: </span>Python</p>
-                            </div>
-
-                            <div class="about">
-                                <p>I was commissioned to get around amazon's bot filtering on their website and to webscrape and get price data from products entered for a system someone was building.</p>
-                            </div>
+                        <h1 class="subtitle">Amazon web scraping</h1>
+                        <div class="tech">
+                            <p><span>Back-end: </span>Python</p>
                         </div>
-                        <div class="right">
-                            Image
+
+                        <div class="about">
+                            <p>I was commissioned to get around amazon's bot filtering on their website and to webscrape and get price data from products entered for a system someone was building.</p>
                         </div>
                     </div>
                     <div class="links">
@@ -264,19 +252,13 @@
                 
                 <div class="project-container">
                     <div class="project">
-                        <div class="left">
-        
+                        <h1 class="subtitle">Youtube Live chat CLI tool</h1>
+                        <div class="tech">
+                            <p><span>Back-end: </span>Python</p>
                         </div>
-        
-                        <div class="right">
-                            <h1 class="subtitle">Youtube Live chat CLI tool</h1>
-                            <div class="tech">
-                                <p><span>Back-end: </span>Python</p>
-                            </div>
 
-                            <div class="about">
-                                <p>A paid CLI tool commissioned for by a youtuber. It takes youtube live superchats and puts them into a csv file for later data analytics.</p>
-                            </div>
+                        <div class="about">
+                            <p>A paid CLI tool commissioned for by a youtuber. It takes youtube live superchats and puts them into a csv file for later data analytics.</p>
                         </div>
                     </div>
 
@@ -302,11 +284,11 @@
                 </div>
             </div>
         </div>
-    
 
         <footer>
-            <a href>Code github repository</a>
-        </footerclass=>
+            <a href="" class="">Website github repository</a>
+            <p class="text">Design inspired by <a href="https://brittanychiang.com/#about" class="">Brittany Chiang</a></p>
+        </footer>
     </div>
 </body>
 </html>
