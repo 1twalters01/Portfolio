@@ -23,6 +23,9 @@ p, h1, h2, h3, h4, h5, li{color: white;}
 body{
     background-color: var(--primary);
 }
+nav{
+    background-color: var(--primary);
+}
 nav a{
     color: var(--quinary);
 }
@@ -289,7 +292,6 @@ body{
     }
     /* Navbar */
     #navbar{
-        background-color: var(--primary);
         width: 100%;
         display: block;
         height: 30px;
@@ -306,9 +308,9 @@ body{
 
     /* Hero section */
     .hero{
-        height: 100vh;
+        height: 100%;
         vertical-align: middle;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
     /* Header */
     .hero .header{
@@ -422,7 +424,6 @@ body{
     .current-project .bullet-points li{
         margin: 0  0 6px 0;
     }
-
     .links{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -479,60 +480,58 @@ body{
 @media only screen and (min-width:481px) and (max-width:768px) {
     /* Main styling */
     .container{
-        width: 80%;
+        width: 75%;
         margin: auto;
     }
     /* Navbar */
     #navbar{
         width: 100%;
-        height: 50px;
-        position: fixed;
-        right: 40px;
-        text-align: right;
-        padding: 30px 20px 40px 0;
         display: block;
+        position: fixed;
+        text-align: center;
+        padding: 20px 0;
         transition: top 0.2s;
     }
     nav a{
         margin: 0 15px;
     }
-
     /* Hero section */
     .hero{
-        height: 850px;
-        vertical-align:middle;
+        height: 100%;
+        vertical-align: middle;
+        padding-bottom: 60px;
     }
     /* Header */
     .hero .header{
-        padding-top: 13%;
+        padding-top: 15%;
     }
     .hero .header .title{
-        font-size: 90px;
+        font-size: 60px;
     }
     .hero .header .subtitle{
-        font-size: 70px;
-        margin-top: 20px;
+        font-size: 40px;
+        margin-top: 10px;
     }
     .hero .header .subtext{
-        width: 50%;
+        width: 80%;
         font-size: 20px;
-        margin-top: 35px;
+        margin-top: 20px;
     }
     /* CV buttons */
     .hero .main-links{
         text-align: center;
-        margin-top: 70px;
+        margin-top: 40px;
     }
     .hero .main-links .cv{
-        width: 600px;
+        width: 350px;
         font-size: 20px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 50px;
+        grid-gap: 25px;
         margin: auto;
     }
     .hero .cv-container{
-        padding: 20px 0;
+        padding: 10px 0;
     }
     .cv-style{
         border: 3px solid;
@@ -540,20 +539,323 @@ body{
     }
     /* links */
     .hero .main-links .other{
-        width: 350px;
+        width: 300px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        margin: 50px auto auto auto;
+        margin: 40px auto auto auto;
     }
     .hero .other div a svg{
         display: block;
-        height: 25px;
-        width: 25px;
+        height: 20px;
+        width: 20px;
         margin: auto auto 5px auto;
+    }
+
+
+
+    .stack{
+        margin: auto auto 80px auto;
+        text-align: center;
+    }
+    .section-title{
+        text-align: left;
+        margin-bottom: 25px;
+    }
+    .stack .backend{
+        margin-bottom: 50px;
+    }
+    .stack .subtitle{
+        margin-bottom: 25px;
+    }
+    .stack .backend-languages, .stack .frontend-languages{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: auto;
+    }
+    .stack img{
+        height: 50px;
+        width: 50px;
+    }
+
+
+
+    .current-project{
+        margin-bottom: 80px;
+    }
+    .current-project .current{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .subtitle{
+        margin-bottom: 10px;
+    }
+    .current-project .about{
+        margin-bottom: 15px;
+    }
+    .current-project .tech{
+        margin-bottom: 30px;
+    }
+    .tech span{
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .current-project .bullet-points{
+        width: 153%;
+        margin: 0  0 30px -70%;
+    }
+    .current-project .bullet-points li{
+        margin: 0  0 6px 0;
+    }
+    .links{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        text-align: center;
+        width: 100px;
+        text-align: center;
+        margin: auto;
+    }
+    .links .code{
+        text-align: left;
+    }
+    .links .code a svg{
+        display: block;
+        text-align: left;
+        height: 20px;
+        width: 20px;
+        margin: auto auto 5px 12px;
+    }
+    .links .video{
+        text-align: right;
+        margin-right: 3px
+    }
+    .links .video a svg{
+        text-align: right;
+        display: block;
+        text-align: right;
+        height: 20px;
+        width: 20px;
+        margin: auto 9px 5px auto;
+    }
+
+
+
+
+    .other-projects .section-title{
+        margin-bottom: 20px;
+    }
+    .other-projects .project-container{
+        width: 500px;
+        margin: auto auto 30px auto;
+    }
+    .other-projects .project{
+        margin-bottom: 20px;
+    }
+    .other-projects .project .tech{
+        margin-bottom: 15px;
+    }
+
+    footer{
+        padding-bottom: 30px;
     }
 }
 
 
-@media only screen and (min-width:320px) and (max-width:480px) {
+@media only screen and (min-width:270px) and (max-width:480px) {
+    /* Main styling */
+    .container{
+        width: 80%;
+        margin: auto;
+    }
+    /* Navbar */
+    #navbar{
+        width: 100%;
+        display: block;
+        position: fixed;
+        text-align: center;
+        padding: 20px 0;
+        transition: top 0.2s;
+    }
+    nav a{
+        margin: 0 5px;
+    }
 
+    /* Hero section */
+    .hero{
+        height: 100vh;
+        vertical-align: middle;
+        margin-bottom: 50px;
+    }
+    /* Header */
+    .hero .header{
+        padding-top: 35%;
+    }
+    .hero .header .title{
+        font-size: 40px;
+    }
+    .hero .header .subtitle{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    .hero .header .subtext{
+        width: 100%;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    /* CV buttons */
+    .hero .main-links{
+        text-align: center;
+        margin-top: 60px;
+    }
+    .hero .main-links .cv{
+        width: 100%;
+        font-size: 18px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 25px;
+        text-align: center;
+        margin: auto;
+    }
+    .hero .cv-container{
+        padding: 10px 0;
+    }
+    .cv-style{
+        border: 3px solid;
+        border-radius: 10px;
+    }
+    /* links */
+    .hero .main-links .other{
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 60px auto auto auto;
+    }
+    .hero .other div a span{
+        display: none;
+    }
+    .hero .other div a svg{
+        display: block;
+        height: 20px;
+        width: 20px;
+        margin: auto auto 5px auto;
+    }
+
+
+
+    .stack{
+        margin: auto auto 80px auto;
+        text-align: center;
+    }
+    .stack .section-title{
+        text-align: left;
+        margin-bottom: 25px;
+    }
+    .stack .backend{
+        margin-bottom: 50px;
+    }
+    .stack .subtitle{
+        margin-bottom: 40px;
+    }
+    .stack .backend-languages, .stack .frontend-languages{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+    }
+    .stack .backend-object, .stack .frontend-object{
+        margin-bottom: 40px;
+    }
+    .stack img{
+        height: 50px;
+        width: 50px;
+    }
+
+
+
+    .current-project{
+        margin-bottom: 80px;
+    }
+    .current-project .section-title{
+        margin-bottom: 10px;
+    }
+    .current-project .left{
+        margin-bottom: 30px;
+    }
+    .subtitle{
+        margin-bottom: 10px;
+    }
+    .current-project .about{
+        margin-bottom: 15px;
+    }
+    .current-project .tech{
+        margin-bottom: 30px;
+    }
+    .current-project .tech p{
+        margin-bottom: 5px;
+    }
+    .tech span{
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .current-project .bullet-points{
+        margin-left: 20px;
+        padding-bottom: 20px;
+    }
+    .current-project .bullet-points li{
+        margin: 0  0 6px 0;
+    }
+    .links{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        text-align: center;
+        width: 100px;
+        text-align: center;
+        margin: auto;
+    }
+    .links .code{
+        text-align: left;
+    }
+    .links .code a svg{
+        display: block;
+        text-align: left;
+        height: 20px;
+        width: 20px;
+        margin: auto auto 5px 12px;
+    }
+    .links .video{
+        text-align: right;
+        margin-right: 3px
+    }
+    .links .video a svg{
+        text-align: right;
+        display: block;
+        text-align: right;
+        height: 20px;
+        width: 20px;
+        margin: auto 9px 5px auto;
+    }
+
+
+    .other-projects{
+        margin-bottom: 40px;
+    }
+    .other-projects .section-title{
+        margin-bottom: 20px;
+    }
+    .other-projects .project-container{
+        width: 100%;
+        margin: auto auto 30px auto;
+    }
+    .other-projects .project{
+        margin-bottom: 20px;
+    }
+    .other-projects .project .tech{
+        margin-bottom: 15px;
+    }
+
+    footer{
+        padding-bottom: 30px;
+    }
 }
