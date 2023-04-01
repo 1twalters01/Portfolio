@@ -74,13 +74,45 @@
     }
 
 
-    .projects .current{
+
+    .current-project{
+        margin-bottom: 160px;
+    }
+    .current-project .current{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .projects .tech span{
+    .current-project .tech span{
         font-weight: bold;
         font-size: 1.2rem;
+    }
+    .current-project .links{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        text-align: center;
+    }
+    .current-project .links .video{
+        text-align: right;
+    }
+    .current-project .links .code{
+        text-align: left;
+    }
+
+
+
+    .other-projects{
+        margin-bottom: 160px;
+    }
+    .other-projects .project-container{
+        margin-bottom: 50px;
+    }
+    .other-projects .project{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .other-projects .links{
+        text-align: center;
     }
 }
 @media only screen and (min-width:769px) and (max-width:1024px) {
