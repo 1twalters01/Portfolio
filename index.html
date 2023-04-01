@@ -9,17 +9,32 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <nav id="navbar">
+        <a href="/">Home</a>
+        <span>|</span>
+        <a href="">Stack</a>
+        <span>|</span>
+        <a href="">Projects</a>
+        <span>|</span>
+        <a href="">About me</a>
+    </nav>
     <div class="container">
         <div class="hero">
             <div class="header">
-                <h1 class="title">Tyler Walters</h1>
-                <h2 class="subtitle">Hi there! I'm a 2022 MEng Mechanical Engineering graduate with a passion for backend development</h2>
+                <h1 class="title Bold">Tyler Walters</h1>
+                <h2 class="subtitle Bold">Backend developer</h2>
+                <p class="subtext Regular">Hi there! I'm a 2022 MEng Mechanical Engineering graduate with a passion for software development</p>
             </div>
         
-            <div class="links">
-                <div class="CV">
-                    <a href="/Documents/CV.pdf" class="view-CV">View CV</a>
-                    <a href="/Documents/CV.pdf" class="download-CV" download>Download CV</a>
+            <div class="main-links">
+                <div class="cv">
+                    <a href="/Documents/CV.pdf" target="_blank" class="view-CV cv-style"><div class="cv-container">
+                        View CV
+                    </div></a>
+                    
+                    <a href="/Documents/CV.pdf" class="download-CV cv-style" download><div class="cv-container">
+                        Download CV
+                    </div></a>
                 </div>
         
                 <div class="other">
@@ -53,63 +68,63 @@
         </div>
 
         <div class="stack">
-            <h1>Tech Stack</h1>
+            <h1 class="section-title">Stack</h1>
             <div class="backend">
-                <h2>Back-end</h2>
+                <h2 class="subtitle">Back-end</h2>
 
                 <div class="backend-languages">
                     <div class="backend-object">
                         <img src="/Images/python.png" alt="" srcset="">
-                        <p>Python</p>
+                        <p class="text">Python</p>
                     </div>
 
                     <div class="backend-object">
                         <img src="/Images/django.png" alt="Django icon" srcset="">
-                        <p>Django</p>
+                        <p class="text">Django</p>
                     </div>
 
                     <div class="backend-object">
                         <img src="/Images/postgresql.png" alt="Django icon" srcset="">
-                        <p>PostgreSQL</p>
+                        <p class="text">PostgreSQL</p>
                     </div>
 
                     <div class="backend-object">
                         <img src="/Images/Matlab.png" alt="Django icon" srcset="">
-                        <p>Matlab</p>
+                        <p class="text">Matlab</p>
                     </div>
                 </div>
                              
             </div>
     
             <div class="frontend">
-                <h2>Front-end</h2>
+                <h2 class="subtitle">Front-end</h2>
 
                 <div class="frontend-languages">
                     <div class="frontend-object">
                         <img src="/Images/javascript.png" alt="Django icon" srcset="">
-                        <p>JavaScript</p>
+                        <p class="text">JavaScript</p>
                     </div>
 
                     <div class="frontend-object">
                         <img src="/Images/Typescript.png" alt="Django icon" srcset="">
-                        <p>TypeScript</p>
+                        <p class="text">TypeScript</p>
                     </div>
 
                     <div class="frontend-object">
                         <img src="/Images/react.png" alt="Django icon" srcset="">
-                        <p>React</p>
+                        <p class="text">React</p>
                     </div>
 
                     <div class="frontend-object">
                         <img src="/Images/sass.png" alt="Django icon" srcset="">
-                        <p>SASS</p>
+                        <p class="text">SASS</p>
                     </div>
                 </div>
             </div>
         </div>
     
         <div class="current-project">
-            <h1>Current project (WIP) - Conjugat</h1>
+            <h1 class="section-title">Current project</h1>
             <div class="current">
                 <div class="left">
                     <p>Image</p>
@@ -117,30 +132,21 @@
     
                 <div class="right">
                     <div class="technologies">
+                        <h1 class="subtitle">Conjugat (WIP)</h1>
                         <div class="about">
                             <p>
                                 A WIP SAAS language learning application meant to focus on verb conjugation. I started building it as Duolingo has many weird sentences and isn't ideal for my future language learning goals.
                             </p>
                         </div>
-                        <div class="frontend">
-                            <div class="tech">
-                                <p><span>Front-end: </span>React (TypeScript), React Redux, Redux persist, SCSS</p>
-                            </div>
+
+                        <div class="tech">
+                            <p><span>Front-end: </span>React (ts), React Redux, Redux persist, SCSS</p>
+                            <p><span>Back-end: </span>Django, DjangoRest Framework, PostgreSQL</p>
+                            <p><span>Design: </span>Midjourney, Figma</p>
                         </div>
+                        
     
-                        <div class="backend">
-                            <div class="tech">
-                                <p><span>Back-end: </span>Django, DjangoRest Framework, PostgreSQL</p>
-                            </div>
-                        </div>
-    
-                        <div class="design">
-                            <div class="tech">
-                                <p><span>Design: </span>Midjourney, Figma</p>
-                            </div>
-                        </div>
-    
-                        <div class="about">
+                        <div class="bullet-points">
                             
                             <ul>
                                 <li>Webscraped reverso for thousands of data points with BS4.</li>
@@ -155,18 +161,28 @@
 
             <div class="links">
                 <div class="video">
-                    <a href="#">video</a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-btn-fill" viewBox="0 0 16 16">
+                            <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                        </svg>
+                        Video
+                    </a>
                 </div>
 
                 <div class="code">
-                    <a href="https://github.com/1twalters01/Conjugat">code</a>
+                    <a href="https://github.com/1twalters01">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        Github
+                    </a>
                 </div>
             </div>
         </div>
 
         <div class="other-projects">
             <div class="previous">
-                <h1>Some other projects</h1>
+                <h1 class="section-title">Some other projects</h1>
                 
                 <div class="project-container">
                     <div class="project">
@@ -174,29 +190,74 @@
                             Image
                         </div>
                         <div class="right">
-                            <h2>Django payment system</h2>
-                            <p>A client wanted to add Stripe and paypal subscription functionality to their Django store but couldn't get things like tutorials, dj-stripe, or django-paypal to work. They wanted the ability to have a free trial. I created my own system for this, ensuring that it was made to be scalable (i.e. other payment providers could easily be added). I used webhooks to ensure that payment was accepted, and encrypted the customer id (and subscription id in the case of stripe) with python-cryptography.</p>
+                            <h1 class="subtitle">Django payment system</h1>
+                            <div class="tech">
+                                <p><span>Back-end: </span>Django, DjangoRest Framework, MySQL</p>
+                            </div>
+                            
+                            <div class="about">
+                                <p>
+                                    A client wanted to add Stripe and paypal subscription functionality to their Django store but couldn't get things like tutorials, dj-stripe, or django-paypal to work. They wanted the ability to have a free trial. I created my own system for this, ensuring that it was made to be scalable (i.e. other payment providers could easily be added). I used webhooks to ensure that payment was accepted, and encrypted the customer id (and subscription id in the case of stripe) with python-cryptography.
+                                </p>
+                            </div>
+
                         </div>
                     </div>
                     <div class="links">
-                        <a href="" >video</a>
-                        <a href="#">github</a>
+                        <div class="video">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-btn-fill" viewBox="0 0 16 16">
+                                    <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                </svg>
+                                Video
+                            </a>
+                        </div>
+        
+                        <div class="code">
+                            <a href="https://github.com/1twalters01">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                                Github
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="project-container">
                     <div class="project">
                         <div class="left">
-                            <h2>Amazon web scraping</h2>
-                            <p>I was commissioned to get around amazon's bot filtering on their website and to webscrape and get price data from products entered.</p>
+                            <h1 class="subtitle">Amazon web scraping</h1>
+                            <div class="tech">
+                                <p><span>Back-end: </span>Python</p>
+                            </div>
+
+                            <div class="about">
+                                <p>I was commissioned to get around amazon's bot filtering on their website and to webscrape and get price data from products entered for a system someone was building.</p>
+                            </div>
                         </div>
                         <div class="right">
                             Image
                         </div>
                     </div>
                     <div class="links">
-                        <a href="" >video</a>
-                        <a href="#">github</a>
+                        <div class="video">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-btn-fill" viewBox="0 0 16 16">
+                                    <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                </svg>
+                                Video
+                            </a>
+                        </div>
+        
+                        <div class="code">
+                            <a href="https://github.com/1twalters01">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                                Github
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
@@ -208,23 +269,44 @@
                         </div>
         
                         <div class="right">
-                            <h2>Youtube Live chat CLI tool</h2>
-                            <p>A paid CLI tool commissioned for by a youtuber. It takes youtube live superchats and puts them into a csv file for later data analytics.</p>
+                            <h1 class="subtitle">Youtube Live chat CLI tool</h1>
+                            <div class="tech">
+                                <p><span>Back-end: </span>Python</p>
+                            </div>
+
+                            <div class="about">
+                                <p>A paid CLI tool commissioned for by a youtuber. It takes youtube live superchats and puts them into a csv file for later data analytics.</p>
+                            </div>
                         </div>
                     </div>
+
                     <div class="links">
-                        <a href="" >video</a>
-                        <a href="#">github</a>
+                        <div class="video">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-btn-fill" viewBox="0 0 16 16">
+                                    <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                </svg>
+                                Video
+                            </a>
+                        </div>
+        
+                        <div class="code">
+                            <a href="https://github.com/1twalters01">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                                Github
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     
 
-        <div class="about">
-            <h1>Still here? Here is a bit about me.</h1>
-            <p></p>
-        </div>
+        <footer>
+            <a href>Code github repository</a>
+        </footerclass=>
     </div>
 </body>
 </html>

@@ -1,3 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+
+/* Reset */
+*, a{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+a{
+    text-decoration: none;
+}
+
+/* Colours*/
+p, h1, h2, h3, h4, h5, li{color: white;}
+:root{
+    --primary: #16213E;
+    --secondary: #0F3460;
+    --tertiary: #533483;
+    --quaternary: #f5536e;
+    --quinary: #64FFDA;
+}
+
+body{
+    background-color: var(--primary);
+}
+nav a{
+    color: var(--quinary);
+}
+nav a:hover{
+    color: #ffffff;
+}
+nav span{
+    color: #ffffff;
+}
+.title{
+    color: #ebedf3;
+}
+.subtitle, .subtext, text{
+    color: #c4c6cc;
+}
+
+.view-CV{
+    color: var(--quinary);
+}
+.download-CV{
+    color: var(--quaternary);
+}
+.cv-style:hover{
+    background-color: #1c294e;
+}
+
+.hero .other a{
+    color: azure;
+}
+.hero .other a:hover{
+    color: var(--quinary);
+}
+.section-title{
+    color: var(--quinary);
+}
+.links a{
+    color: azure;
+}
+.links a:hover{
+    color: var(--quinary);
+}
+
+/* Fonts */
+body{
+    font-family: 'Barlow', sans-serif;
+}
+.Bold{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+}
+.Regular{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+}
+
 
 
 @media only screen and (min-width:1025px) {
@@ -5,59 +85,92 @@
         width: 900px;
         margin: auto;
     }
+    /* Navbar */
+    #navbar{
+        background-color: var(--primary);
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        right: 40px;
+        text-align: right;
+        padding: 30px 20px 40px 0;
+        display: block;
+        transition: top 0.2s;
+    }
+    nav a{
+        margin: 0 15px;
+    }
+
+    /* Hero section */
     .hero{
-        height: 710px;
+        height: 850px;
         vertical-align:middle;
     }
+    /* Header */
     .hero .header{
-        padding-top: 15%;
+        padding-top: 13%;
+    }
+    .hero .header .title{
+        font-size: 90px;
     }
     .hero .header .subtitle{
-        margin-top: 40px;
+        font-size: 70px;
+        margin-top: 20px;
     }
-    .hero .links{
+    .hero .header .subtext{
+        width: 50%;
+        font-size: 20px;
+        margin-top: 35px;
+    }
+    .hero .main-links{
         text-align: center;
-        margin-top: 90px;
+        margin-top: 70px;
     }
-    .hero .links .other{
-        margin-top: 50px;
+    /* CV buttons */
+    .hero .main-links .cv{
+        width: 600px;
+        font-size: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+        margin: auto;
     }
-    .hero .links .view-CV{
-        border: 2px solid blue;
-        background-color: blue;
-        border-radius: 5px;
-        color: white;
+    .hero .cv-container{
+        padding: 20px 0;
     }
-    .hero .links .download-CV{
-        border: 2px solid red;
-        background-color: red;
-        border-radius: 5px;
-        color: white;
+    .cv-style{
+        border: 3px solid;
+        border-radius: 10px;
     }
-    .hero .other{
+    /* links */
+    .hero .main-links .other{
         width: 350px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        margin: auto;
+        margin: 50px auto auto auto;
     }
     .hero .other div a svg{
         display: block;
-        margin: auto;
-        
+        height: 25px;
+        width: 25px;
+        margin: auto auto 5px auto;
     }
 
 
 
     .stack{
-        margin: auto auto 160px auto;
+        margin: auto auto 200px auto;
         text-align: center;
     }
-    .stack h1{
+    .stack .section-title{
         text-align: left;
         margin-bottom: 50px;
     }
     .stack .backend{
         margin-bottom: 120px;
+    }
+    .stack .subtitle{
+        margin-bottom: 40px;
     }
     .stack .backend-languages{
         display: grid;
@@ -78,26 +191,68 @@
     .current-project{
         margin-bottom: 160px;
     }
+    .section-title{
+        text-align: left;
+        margin-bottom: 50px;
+    }
     .current-project .current{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .current-project .tech span{
+    .subtitle{
+        margin-bottom: 10px;
+    }
+    .current-project .about{
+        margin-bottom: 15px;
+    }
+    .current-project .tech{
+        margin-bottom: 40px;
+    }
+    .tech span{
         font-weight: bold;
         font-size: 1.2rem;
     }
-    .current-project .links{
+    .current-project .bullet-points{
+        margin: 0  0 30px 20px;
+    }
+    .current-project .bullet-points li{
+        margin: 0  0 6px 0;
+    }
+
+    .links{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
         text-align: center;
     }
-    .current-project .links .video{
-        text-align: right;
-    }
-    .current-project .links .code{
+    .links .code{
         text-align: left;
     }
+    .links {
+        width: 100px;
+        text-align: center;
+        margin: auto;
+    }
+    .links .code a svg{
+        display: block;
+        text-align: left;
+        height: 25px;
+        width: 25px;
+        margin: auto auto 5px 9px;
+    }
+    .links .video{
+        text-align: right;
+        margin-right: 3px
+    }
+    .links .video a svg{
+        text-align: right;
+        display: block;
+        text-align: right;
+        height: 25px;
+        width: 25px;
+        margin: auto 6px 5px auto;
+    }
+    
 
 
 
@@ -111,8 +266,11 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    .other-projects .links{
-        text-align: center;
+    .other-projects .project{
+        margin-bottom: 30px;
+    }
+    .other-projects .project .tech{
+        margin-bottom: 15px;
     }
 }
 @media only screen and (min-width:769px) and (max-width:1024px) {
