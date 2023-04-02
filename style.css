@@ -26,10 +26,12 @@ body{
 nav{
     background-color: var(--primary);
 }
-nav a{
+nav p{
+    display: inline-block;
     color: var(--quinary);
+    cursor: pointer;
 }
-nav a:hover{
+nav p:hover{
     color: #ffffff;
 }
 nav span{
@@ -308,9 +310,9 @@ body{
 
     /* Hero section */
     .hero{
-        height: 100%;
+        height: 100vh;
         vertical-align: middle;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
     /* Header */
     .hero .header{
@@ -706,7 +708,7 @@ body{
     /* CV buttons */
     .hero .main-links{
         text-align: center;
-        margin-top: 60px;
+        margin-top: 30%;
     }
     .hero .main-links .cv{
         width: 100%;
@@ -846,7 +848,7 @@ body{
     }
     .other-projects .project-container{
         width: 100%;
-        margin: auto auto 30px auto;
+        margin: auto auto 50px auto;
     }
     .other-projects .project{
         margin-bottom: 20px;
