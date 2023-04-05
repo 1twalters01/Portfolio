@@ -23,14 +23,17 @@ navOther.addEventListener("click", otherFunction)
 
 function homeFunction(){
   document.getElementById("hero").scrollIntoView()
+  document.getElementById("navbar").style.top = "-50px";
 }
 function stackFunction(){
   document.getElementById("stack").scrollIntoView()
+  document.getElementById("navbar").style.top = "-50px";
 }
 function currentFunction(){
   document.getElementById("current").scrollIntoView()
+  document.getElementById("navbar").style.top = "-50px";
 }
 function otherFunction(){
-  console.log('hi')
   document.getElementById("other").scrollIntoView()
+  document.getElementById("navbar").style.top = "-50px";
 }
