@@ -89,7 +89,7 @@ body{
     font-weight: 400;
 }
 
-
+/* Screens */
 @media only screen and (min-width:1025px) {
     /* Main styling */
     .container{
@@ -210,6 +210,10 @@ body{
     .current-project .current{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .current-project .current img {
+        width: 100%;
     }
     .subtitle{
         margin-bottom: 10px;
@@ -399,6 +403,10 @@ body{
     .current-project .current{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .current-project .current img {
+        width: 100%;
     }
     .section-title{
         text-align: left;
@@ -413,7 +421,7 @@ body{
         margin-bottom: 15px;
     }
     .current-project .tech{
-        margin-bottom: 60px;
+        margin-bottom: 20px;
     }
     .tech span{
         font-weight: bold;
@@ -478,7 +486,7 @@ body{
     }
 }
 
-
+/* Tablets */
 @media only screen and (min-width:481px) and (max-width:768px) {
     /* Main styling */
     .container{
@@ -588,21 +596,25 @@ body{
     .current-project .current{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
     }
-    .subtitle{
+    .current-project .current img {
+        width: 100%;
+    }
+    .subtitle {
         margin-bottom: 10px;
     }
-    .current-project .about{
+    .current-project .about {
         margin-bottom: 15px;
     }
-    .current-project .tech{
+    .current-project .tech {
         margin-bottom: 30px;
     }
-    .tech span{
+    .tech span {
         font-weight: bold;
         font-size: 1.2rem;
     }
-    .current-project .bullet-points{
+    .current-project .bullet-points, .current-project .tech {
         width: 153%;
         margin: 0  0 30px -70%;
     }
@@ -663,8 +675,8 @@ body{
     }
 }
 
-
-@media only screen and (min-width:270px) and (max-width:480px) {
+/* Mobile */
+@media only screen and (min-width:50px) and (max-width:480px) {
     /* Main styling */
     .container{
         width: 80%;
@@ -783,6 +795,9 @@ body{
     }
     .current-project .left{
         margin-bottom: 30px;
+    }
+    .current-project .current img {
+        width: 100%;
     }
     .subtitle{
         margin-bottom: 10px;
