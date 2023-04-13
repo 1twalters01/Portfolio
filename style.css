@@ -235,38 +235,41 @@ body{
         margin: 0  0 6px 0;
     }
 
-    .links{
-        display: grid;
+    .current-project .links{
+        /* display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
+        grid-gap: 10px; */
         text-align: center;
     }
-    .links .code{
-        text-align: left;
+    .current-project .links .code{
+        /* text-align: left; */
+        text-align: center;
     }
-    .links {
+    .current-project .links {
         width: 100px;
         text-align: center;
         margin: auto;
     }
-    .links .code a svg{
+    .current-project .links .code a svg{
         display: block;
         text-align: left;
         height: 25px;
         width: 25px;
-        margin: auto auto 5px 9px;
+        /* margin: auto auto 5px 9px; */
+        margin: auto;
     }
-    .links .video{
+    .current-project .links .video{
         text-align: right;
         margin-right: 3px
     }
-    .links .video a svg{
+    .current-project .links .video a svg{
         text-align: right;
         display: block;
         text-align: right;
         height: 25px;
         width: 25px;
-        margin: auto 6px 5px auto;
+        /* margin: auto 6px 5px auto; */
+        margin: auto;
     }
 
 
@@ -285,6 +288,40 @@ body{
     }
     .other-projects .project .tech{
         margin-bottom: 15px;
+    }
+
+    .other-projects .links{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        text-align: center;
+    }
+    .other-projects .links .code{
+        text-align: left;
+    }
+    .other-projects .links {
+        width: 100px;
+        text-align: center;
+        margin: auto;
+    }
+    .other-projects .links .code a svg{
+        display: block;
+        text-align: left;
+        height: 25px;
+        width: 25px;
+        margin: auto auto 5px 9px;
+    }
+    .other-projects .links .video{
+        text-align: right;
+        margin-right: 3px
+    }
+    .other-projects .links .video a svg{
+        text-align: right;
+        display: block;
+        text-align: right;
+        height: 25px;
+        width: 25px;
+        margin: auto 6px 5px auto;
     }
 
     footer{
@@ -441,36 +478,38 @@ body{
     .current-project .bullet-points li{
         margin: 0  0 6px 0;
     }
-    .links{
-        display: grid;
+    .current-project .links{
+        /* display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
+        grid-gap: 10px; */
         text-align: center;
         width: 100px;
         text-align: center;
         margin: auto;
     }
-    .links .code{
+    /* .current-project .links .code{
         text-align: left;
-    }
-    .links .code a svg{
+    } */
+    .current-project .links .code a svg{
         display: block;
         text-align: left;
         height: 20px;
         width: 20px;
-        margin: auto auto 5px 12px;
+        /* margin: auto auto 5px 12px; */
+        margin: auto;
     }
-    .links .video{
+    .current-project .links .video{
         text-align: right;
         margin-right: 3px
     }
-    .links .video a svg{
+    .current-project .links .video a svg{
         text-align: right;
         display: block;
         text-align: right;
         height: 20px;
         width: 20px;
-        margin: auto 9px 5px auto;
+        /* margin: auto 9px 5px auto; */
+        margin: auto;
     }
 
 
@@ -486,6 +525,37 @@ body{
     }
     .other-projects .project .tech{
         margin-bottom: 15px;
+    }
+    .other-projects .links{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        text-align: center;
+        width: 100px;
+        text-align: center;
+        margin: auto;
+    }
+    .other-projects .links .code{
+        text-align: left;
+    }
+    .other-projects .links .code a svg{
+        display: block;
+        text-align: left;
+        height: 20px;
+        width: 20px;
+        margin: auto auto 5px 12px;
+    }
+    .other-projects .links .video{
+        text-align: right;
+        margin-right: 3px
+    }
+    .other-projects .links .video a svg{
+        text-align: right;
+        display: block;
+        text-align: right;
+        height: 20px;
+        width: 20px;
+        margin: auto 9px 5px auto;
     }
 
     footer{
@@ -628,36 +698,38 @@ body{
     .current-project .bullet-points li{
         margin: 0  0 6px 0;
     }
-    .links{
-        display: grid;
+    .current-project .links{
+        /* display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
+        grid-gap: 10px; */
         text-align: center;
         width: 100px;
         text-align: center;
         margin: auto;
     }
-    .links .code{
+    /* .current-project .links .code{
         text-align: left;
-    }
-    .links .code a svg{
+    } */
+    .current-project .links .code a svg{
         display: block;
         text-align: left;
         height: 20px;
         width: 20px;
-        margin: auto auto 5px 12px;
+        /* margin: auto auto 5px 12px; */
+        margin: auto;
     }
-    .links .video{
+    .current-project .links .video{
         text-align: right;
         margin-right: 3px
     }
-    .links .video a svg{
+    .current-project .links .video a svg{
         text-align: right;
         display: block;
         text-align: right;
         height: 20px;
         width: 20px;
-        margin: auto 9px 5px auto;
+        /* margin: auto 9px 5px auto; */
+        margin: auto;
     }
 
 
@@ -675,6 +747,38 @@ body{
     }
     .other-projects .project .tech{
         margin-bottom: 15px;
+    }
+
+    .other-projects .links{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        text-align: center;
+        width: 100px;
+        text-align: center;
+        margin: auto;
+    }
+    .other-projects .links .code{
+        text-align: left;
+    }
+    .other-projects .links .code a svg{
+        display: block;
+        text-align: left;
+        height: 20px;
+        width: 20px;
+        margin: auto auto 5px 12px;
+    }
+    .other-projects .links .video{
+        text-align: right;
+        margin-right: 3px
+    }
+    .other-projects .links .video a svg{
+        text-align: right;
+        display: block;
+        text-align: right;
+        height: 20px;
+        width: 20px;
+        margin: auto 9px 5px auto;
     }
 
     footer{
@@ -829,36 +933,38 @@ body{
     .current-project .bullet-points li{
         margin: 0  0 6px 0;
     }
-    .links{
-        display: grid;
+    .current-project .links{
+        /* display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
+        grid-gap: 10px; */
         text-align: center;
         width: 100px;
         text-align: center;
         margin: auto;
     }
-    .links .code{
+    /* .current-project .links .code{
         text-align: left;
-    }
-    .links .code a svg{
+    } */
+    .current-project .links .code a svg{
         display: block;
         text-align: left;
         height: 20px;
         width: 20px;
-        margin: auto auto 5px 12px;
+        /* margin: auto auto 5px 12px; */
+        margin: auto;
     }
-    .links .video{
+    .current-project .links .video{
         text-align: right;
         margin-right: 3px
     }
-    .links .video a svg{
+    .current-project .links .video a svg{
         text-align: right;
         display: block;
         text-align: right;
         height: 20px;
         width: 20px;
-        margin: auto 9px 5px auto;
+        /* margin: auto 9px 5px auto; */
+        margin: auto;
     }
 
 
@@ -878,6 +984,38 @@ body{
     .other-projects .project .tech{
         margin-bottom: 15px;
     }
+    .other-projects .links{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        text-align: center;
+        width: 100px;
+        text-align: center;
+        margin: auto;
+    }
+    .other-projects .links .code{
+        text-align: left;
+    }
+    .other-projects .links .code a svg{
+        display: block;
+        text-align: left;
+        height: 20px;
+        width: 20px;
+        margin: auto auto 5px 12px;
+    }
+    .other-projects .links .video{
+        text-align: right;
+        margin-right: 3px
+    }
+    .other-projects .links .video a svg{
+        text-align: right;
+        display: block;
+        text-align: right;
+        height: 20px;
+        width: 20px;
+        margin: auto 9px 5px auto;
+    }
+
 
     footer{
         padding-bottom: 30px;
