@@ -274,6 +274,9 @@ body{
         width: 500px;
         margin: auto auto 100px auto;
     }
+    .other-projects .section-title{
+        margin-bottom: 50px;
+    }
     .other-projects .project-container{
         margin-bottom: 50px;
     }
